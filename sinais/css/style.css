@@ -1,0 +1,275 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+@font-face {
+font-family: 'robotobold';
+src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
+url('../fonts/roboto-black-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'robotolight';
+src: url('../fonts/roboto-thin-webfont.woff2') format('woff2'),
+url('../fonts/roboto-thin-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'robotoregular';
+src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+url('../fonts/roboto-regular-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@keyframes shadow-pulse
+{
+0% {
+box-shadow: 0 0 0 0px rgba(245, 12, 44, 0.5);
+}
+100% {
+box-shadow: 0 0 0 15px rgba(245, 12, 44, 0);
+}
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: 'montserrat' !important;
+	background: #000 !important;
+	width:100%;
+	height: 100%;
+	color: #fff !important;
+	font-size: 100%;
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5;
+}
+html, body {
+height: 100%;
+}
+p {
+	margin: 0px;
+}
+.pc {
+	display: block;
+}
+.mobile {
+	display: none;
+}
+
+img, picture, video, embed {
+	max-width: 100%;
+	border: 0 !important;
+}
+
+.siteCenter {
+	width:1200px;
+	margin: 0 auto;
+	position: relative;
+}
+a {
+	text-decoration:none;
+	-webkit-transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out;
+	-o-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
+}
+a:hover {
+	text-decoration: none !important;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* Barra de Rolagem da Página Personalizada */
+::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+background-color: #3b3b3b;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background-color: #00ff00;
+}
+
+/* ------------------------------------------------------ */
+/* CSS ESPECÍFICA */
+
+.topo {
+	width: 100%;
+}
+.corpo {
+
+}
+
+.logo {
+	margin: 10px 0px;
+	float: left;
+}
+
+	
+.titulo {
+	text-align: center;
+	font-weight: 700;
+}
+.txt-line00 {
+	padding: 50px 0px;
+}
+.txt-line1 {
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+.txt-line2 {
+	color: #3fd10e;
+	text-align: center
+}
+.list__games {
+	padding: 0px 0px;
+}
+.game__item {
+	width: 20%;
+	padding: 10px;
+	float: left;
+}
+.game__img00 {
+	background: #000;
+	position: relative;
+}
+.game__img {
+
+}
+.game__img00:hover img{
+	opacity: 0.3;
+}
+.game__img00:hover .game__link{
+	display: block;
+}
+
+.game__percent {
+background: #fff;
+border-radius: 50px;
+position: relative;
+height: 28px;
+overflow: hidden;
+margin: 10px 5px;
+}
+.game__percent--prog {
+height: 28px;
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+position: absolute;
+top: 0px;
+left: 0px;
+z-index: 2;
+background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+background-size: 1rem 1rem;
+transition: width .6s ease;
+-webkit-animation: progress-bar-stripes 2s linear infinite;
+animation: progress-bar-stripes 2s linear infinite;
+}
+.game__percent--number {
+	text-align: center;
+  color: #000;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  width: 100%;
+  height: 24px;
+}
+.game__name {
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	padding: 0px 0px 10px 0px;
+}
+.game__link {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 0px;
+    text-align: center;
+}
+.game__link a {
+    background-image: linear-gradient(180deg, #48ff00 0%, #48ff00	 100%);
+    color: #000000;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+/* Estilos para o modal */
+
+.iframeContainer {
+position: relative;
+left: 0;
+width: 96%;
+height: 100vh;
+}
+
+.iframeContainer iframe {
+width: 96%;
+height: 100%;
+border: none;
+}
+
+.showIframe{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+/* FIM DA CSS ESPECÍFICA */
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+.siteCenter {
+	width: 100%;
+	padding: 0px 10px;
+}
+}
+
+@media screen and (max-width: 520px) {	
+.topo {
+	min-height:77px;
+	background: #000;
+	z-index:99999;
+}
+.titulo {
+	font-size: 1em;
+}
+.game__item {
+	width: 50%;
+}
+.pc {
+	display: none;
+}
+.mobile {
+	display: block;
+}
+.siteCenter {
+width: 100%;
+margin-right: 0;
+}
+.logo {
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+}
+}
